@@ -83,6 +83,7 @@ function createGallery() {
 </li>
 `);
   }, '');
+  
   galleryItem.insertAdjacentHTML('beforeend', classes);
 
   let gallery = new SimpleLightbox('.gallery a', {
@@ -92,6 +93,6 @@ function createGallery() {
   gallery.on('close.simplelightbox', function () {
     gallery.refresh();
   });
-}
+};
 
 createGallery();
